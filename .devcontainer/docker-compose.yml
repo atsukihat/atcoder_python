@@ -5,6 +5,5 @@ services:
     image: atcoder
     container_name: atcoder
     tty: true
-    volumes: 
+    volumes:
       - ../../atcoder_python:/atcoder_python
-    
