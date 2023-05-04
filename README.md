@@ -48,3 +48,5 @@ https://qiita.com/gomatofu/items/1adae9b7cd79b0f8044f
 
  # 出力確認用
  alias d='python main.py'
+
+AtCoder Beginners Selectionの問題にpythonで解答
