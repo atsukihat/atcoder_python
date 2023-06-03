@@ -6,7 +6,6 @@ while all(a % 2 == 0 for a in A):  # all() は、引数に与えられた要素�
     count += 1
 print(count)
 
-
 # n=int(input())
 # a = list(map(int,input().split()))
 # count=0
