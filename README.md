@@ -3,13 +3,18 @@
 * Reproduction of python3 and pypy environment in atcoder on VSCode.
 * The atcoder-cli and online-judge-tools for automated testing and submission.
 
+### Reference repository
+  ```
+  https://github.com/gomatofu/atcoder_python
+  ```
+
 ## Assumption
 The VS Code extension "Remote-Containers" is intended to be used.
 
 ### Usage
 Clone this repository
  ```
- git clone https://github.com/gomatofu/atcoder_python.git
+ git clone https://github.com/amoon46/atcoder_python.git
  ```
 Open in VSCode
  ```
@@ -22,7 +27,8 @@ Commands for question creation, automated testing, and automated testing are int
 
 I have written more details on the community blog if you would like to take a look.
 https://qiita.com/gomatofu/items/1adae9b7cd79b0f8044f
-### atcoder_python
+
+### explain atcoder-cli and alias 
 
 ### ログイン
  oj login https://atcoder.jp/contests
@@ -48,5 +54,3 @@ https://qiita.com/gomatofu/items/1adae9b7cd79b0f8044f
 
  ### 出力確認用
  alias d='python main.py'
-
-AtCoder Beginners Selectionの問題にpythonで解答
