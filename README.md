@@ -32,10 +32,10 @@ https://qiita.com/gomatofu/items/1adae9b7cd79b0f8044f
 ## explain atcoder-cli and alias 
 
 ### ログイン
- oj login https://atcoder.jp/contests
+ ```oj login https://atcoder.jp/contests```
 
 ### テストケースなどを取得
- acc new abc251
+ ```acc new abc251```
 
 ### PyPy3でのテスト実施
  alias test='oj t -c "pypy3 main.py" -d ./tests/'
