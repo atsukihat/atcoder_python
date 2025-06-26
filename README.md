@@ -34,6 +34,11 @@ https://qiita.com/gomatofu/items/1adae9b7cd79b0f8044f
 ### ログイン
  ```oj login https://atcoder.jp/contests```
 
+※ AtCoder側の仕様変更により、ログインがうまくいかない場合があります。
+その際は以下の記事を参考にしてセッション情報の取得を行ってください：
+https://kaiyou9.com/acc_and_oj_login_failed/
+
+
 ### テストケースなどを取得
  ```acc new abc251 -c all```
 
