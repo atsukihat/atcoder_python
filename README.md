@@ -38,6 +38,7 @@ https://qiita.com/gomatofu/items/1adae9b7cd79b0f8044f
 その際は以下の記事を参考にしてセッション情報の取得を行ってください：
 https://github.com/key-moon/aclogin
 
+```aclogin```
 
 ### テストケースなどを取得
  ```acc new abc251 -c all```
@@ -49,10 +50,10 @@ https://github.com/key-moon/aclogin
  alias test2='oj t -c "python3 main.py" -d ./tests/'
 
 ### PyPy3での解答提出
- alias sb='acc s main.py -- --guess-python-interpreter pypy'
+ alias sb='alias accs='acc s -- main.py --language 5078'
 
 ### Pythonでの解答提出
- alias sb2='acc s main.py'
+ alias sb2='alias sb2='acc s main.py --language 5055'
 
 ### コンテストフォルダへ移動
  alias c='cd contest'

@@ -3,6 +3,7 @@ networkx
 numba
 scipy
 scikit-learn
+selenium
 
 # linting and formatting
 flake8

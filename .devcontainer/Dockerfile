@@ -23,8 +23,24 @@ RUN python -m pip install --upgrade pip
 RUN pip install -r /tmp/requirements.txt
 
 
-
 # コンテスト補助ツールをインストール
 RUN pip3 install online-judge-tools
 RUN pip install aclogin
 RUN npm install -g atcoder-cli
+
+# AtCoderの単位表記変更に対応した修正
+RUN sed -i \
+    -e 's/(KB|MB)/(KiB|MiB)/g' \
+    -e "s/if memory_limit_unit == 'KB':/if memory_limit_unit == 'KiB':/g" \
+    -e "s/elif memory_limit_unit == 'MB':/elif memory_limit_unit == 'MiB':/g" \
+    /usr/local/lib/python3.10/site-packages/onlinejudge/service/atcoder.py
+
+# AtCoder用エイリアスを.bashrcに追加
+RUN echo "# AtCoder aliases" >> /home/${USERNAME}/.bashrc && \
+    echo "alias test='oj t -c \"pypy3 main.py\" -d ./tests/'" >> /home/${USERNAME}/.bashrc && \
+    echo "alias test2='oj t -c \"python3 main.py\" -d ./tests/'" >> /home/${USERNAME}/.bashrc && \
+    echo "alias sb='acc s -- main.py --language 5078'" >> /home/${USERNAME}/.bashrc && \
+    echo "alias sb2='acc s -- main.py --language 5055'" >> /home/${USERNAME}/.bashrc && \
+    echo "alias c='cd contest'" >> /home/${USERNAME}/.bashrc && \
+    echo "alias o='code main.py'" >> /home/${USERNAME}/.bashrc && \
+    echo "alias d='python main.py'" >> /home/${USERNAME}/.bashrc
