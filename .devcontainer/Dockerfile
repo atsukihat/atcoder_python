@@ -26,4 +26,5 @@ RUN pip install -r /tmp/requirements.txt
 
 # コンテスト補助ツールをインストール
 RUN pip3 install online-judge-tools
+RUN pip install aclogin
 RUN npm install -g atcoder-cli
