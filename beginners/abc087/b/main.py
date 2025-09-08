@@ -1,4 +1,4 @@
-A, B, C, X = [int(input()) for i in range(4)]
+A, B, C, X = [int(input()) for _ in range(4)]
 count = 0
 for a in range(A+1):
     for b in range(B+1):
