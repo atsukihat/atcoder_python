@@ -8,6 +8,7 @@ LOG = 62
 N, B, K = map(int, input().split())
 C = list(map(int, input().split()))
 
+
 # dp[i] と dp[j] を掛け合わせて dp[i+j] を得る関数
 # tj: 10^j を B で割ったあまり
 def mul(dpi, dpj, tj):
@@ -17,6 +18,7 @@ def mul(dpi, dpj, tj):
             res[(p * tj + q) % B] += dpi[p] * dpj[q]
             res[(p * tj + q) % B] %= MOD
     return res
+
 
 # ten[i]: 10^(2^i) を B で割ったあまり
 ten = [10] * LOG

@@ -6,6 +6,7 @@ scikit-learn
 selenium
 
 # linting and formatting
-flake8
 black
 isort
+flake8
+autopep8
