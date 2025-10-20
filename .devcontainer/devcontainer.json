@@ -9,7 +9,10 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "github.copilot.enable": {
+          "*": false
+        }
       },
       "extensions": [
         "ms-python.python",

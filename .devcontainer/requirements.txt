@@ -4,7 +4,6 @@ numba
 scipy
 scikit-learn
 selenium
-math
 
 # linting and formatting
 black
